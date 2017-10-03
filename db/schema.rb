@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20171003214056) do
 
   create_table "homes", force: :cascade do |t|
     t.string "owner"
-    t.string "type"
+    t.string "htype"
     t.integer "distance"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

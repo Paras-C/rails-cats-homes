@@ -7,13 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-c1 = Cat.create!(name: "Fluffle", age: 3, species: "Persian")
-c2 = Cat.create!(name: "Puffle", age: 2, species: "Short Hair")
-c3 = Cat.create!(name: "Snuffle", age: 4, species: "Bengal")
+c1 = Cat.create!(name:"Fluffle", age: 3, species:"Persian")
+c2 = Cat.create!(name:"Puffle", age: 2, species:"Short Hair")
+c3 = Cat.create!(name:"Snuffle", age: 4, species:"Bengal")
 
-h1 = Home.create(owner: "Jeff", type: "Apartment", distance: 1000)
-h2 = Home.create(owner: "Zeff", type: "House Boat", distance: 100)
+h1 = Home.create(owner:"Jeff", htype:"Apartment", distance: 1000)
+h2 = Home.create(owner:"Zeff", htype:"House Boat", distance: 100)
 
-CatsHomes.create!(cat_id: c3.id, home_id: h1.id)
-CatsHomes.create!(cat_id: c2.id, home_id: h1.id)
-CatsHomes.create!(cat_id: c1.id, home_id: h2.id)
+CatsHome.create!(cat_id: c3.id, home_id: h1.id)
+CatsHome.create!(cat_id: c2.id, home_id: h1.id)
+CatsHome.create!(cat_id: c1.id, home_id: h2.id)
